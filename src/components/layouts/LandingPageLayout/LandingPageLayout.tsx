@@ -1,11 +1,17 @@
+import LandingPageLayoutFooter from "./LandingPageLayoutFooter";
 import LandingPageLayoutNavbar from "./LandingPageLayoutNavbar";
 
-const LandingPageLayout = (props: { children: React.ReactNode }) => {
+interface propTypes {
+  children: React.ReactNode;
+}
+
+const LandingPageLayout = (props: propTypes) => {
   const { children } = props;
   return (
     <main>
       <LandingPageLayoutNavbar />
       {children}
+      <LandingPageLayoutFooter />
     </main>
   );
 };

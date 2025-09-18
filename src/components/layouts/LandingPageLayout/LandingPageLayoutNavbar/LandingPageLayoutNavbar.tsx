@@ -1,6 +1,7 @@
 import { FiArrowRight } from "react-icons/fi";
 import { NAV_ITEMS } from "../LandingPageLayout.constant";
 import Button from "~/components/ui/Button";
+import Link from "next/link";
 
 const LandingPageLayoutNavbar = () => {
   return (
@@ -8,8 +9,10 @@ const LandingPageLayoutNavbar = () => {
       <div className="font-semibold text-[1.75rem]">SellSpot</div>
       <nav>
         <ul className="flex items-center justify-center gap-4">
-          {NAV_ITEMS.map((link, index) => (
-            <li key={index}>{link}</li>
+          {NAV_ITEMS.map((nav, index) => (
+            <li key={index}>
+              <Link className="hover:text-primary" href={nav.href}>{nav.label}</Link>
+            </li>
           ))}
         </ul>
       </nav>
