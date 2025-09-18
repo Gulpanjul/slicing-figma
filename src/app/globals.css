@@ -4,4 +4,7 @@
   --color-primary: oklch(0.5754 0.1705 282.36);
   --color-dark: oklch(0.09 0.0577 272.51);
   --color-light: oklch(0.9294 0.0202 286);
+  --color-gray: oklch(0.3713 0.0272 287.86);
+  --color-card-primary: oklch(0.2647 0.0297 287.05);
+  --color-card-secondary: oklch(0.09 0.0577 272.51);
 }
