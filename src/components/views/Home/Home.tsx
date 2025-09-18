@@ -1,10 +1,11 @@
-import React from "react";
 import HeroSection from "./HeroSection";
+import MottoSection from "./MottoSection";
 
 const Home = () => {
   return (
     <>
       <HeroSection />
+      <MottoSection />
     </>
   );
 };
