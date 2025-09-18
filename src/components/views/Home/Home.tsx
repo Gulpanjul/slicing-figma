@@ -1,3 +1,4 @@
+import FaqSection from "./FaqSection";
 import FeatureSection from "./FeatureSection";
 import HeroSection from "./HeroSection";
 import MottoSection from "./MottoSection";
@@ -8,6 +9,7 @@ const Home = () => {
       <HeroSection />
       <MottoSection />
       <FeatureSection />
+      <FaqSection />
     </>
   );
 };

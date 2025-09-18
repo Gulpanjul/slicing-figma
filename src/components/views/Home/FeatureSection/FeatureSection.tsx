@@ -1,4 +1,3 @@
-import React from "react";
 import { FEATURE_ITEMS } from "./FeatureSection.constant";
 
 const FeatureSection = () => {

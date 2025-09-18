@@ -4,7 +4,7 @@ import Button from "~/components/ui/Button";
 
 const LandingPageLayoutNavbar = () => {
   return (
-    <header className="fixed inset-0 z-50 container mx-auto h-[5rem] px-[1.188rem] flex items-center justify-between bg-dark">
+    <header className="fixed inset-0 z-10 container mx-auto h-[5rem] px-[1.188rem] flex items-center justify-between bg-dark">
       <div className="font-semibold text-[1.75rem]">SellSpot</div>
       <nav>
         <ul className="flex items-center justify-center gap-4">
