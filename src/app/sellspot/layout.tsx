@@ -25,13 +25,13 @@ const SellSpotLayout = (props: PropTypes) => {
     }, [setTheme]);
 
     return (
-        <main
+        <body
             className={`${poppins.variable} theme-sellspot bg-dark text-light`}
         >
             <LandingPageLayoutNavbar />
             {children}
             <LandingPageLayoutFooter />
-        </main>
+        </body>
     );
 };
 

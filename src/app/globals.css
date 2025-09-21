@@ -17,3 +17,12 @@
     --color-card-primary: oklch(0.2647 0.0297 287.05);
     --color-card-secondary: oklch(0.09 0.0577 272.51);
 }
+
+.theme-videfly {
+    --color-primary: oklch(0.5253 0.2392 289.53);
+    --color-dark: oklch(0.09 0.0577 272.51);
+    --color-light: oklch(1 0 0);
+    --color-gray: #111336;
+    --color-card-primary: oklch(0.5253 0.2392 289.53);
+    --color-card-secondary: #3F2181;
+}
