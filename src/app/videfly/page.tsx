@@ -1,11 +1,11 @@
-import HeaderSection from "./components/views/HeaderSection";
-import MainSection from "./components/views/MainSection";
+import Header from "~/components/views/Videfly/Header";
+import Main from "~/components/views/Videfly/Main";
 
 const videflyPage = () => {
     return (
-        <div className="flex-7 gap-y-9 flex flex-col">
-            <HeaderSection />
-            <MainSection />
+        <div className="gap-y-9 flex flex-col">
+            <Header />
+            <Main />
         </div>
     );
 };

@@ -1,10 +1,9 @@
-import React from "react";
-import BellIcon from "../../ui/BellIcon";
 import Image from "next/image";
+import Bell from "~/components/assets/Videfly/bell.svg";
 
-const HeaderSection = () => {
+const Header = () => {
     return (
-        <section className="flex items-center gap-4 py-1.5 px-11 justify-end">
+        <header className="flex items-center gap-4 py-1.5 px-11 justify-end">
             <div className="flex items-center gap-2">
                 <p className="text-xs font-medium px-4 py-3 text-[#FE846F]">
                     Sisa 5 Kredit
@@ -14,21 +13,21 @@ const HeaderSection = () => {
                 </button>
             </div>
             <div className="flex items-center gap-1">
-                <BellIcon />
+                <Bell />
                 <div className="flex items-center gap-2">
                     <p className="text-sm font-medium">Dewi Anjani</p>
                     <div className="relative h-9 w-9 ">
                         <Image
                             src="/images/png/videfly-avatar.png"
-                            alt=""
+                            alt="user avatar"
                             fill
                             className="rounded-full"
                         />
                     </div>
                 </div>
             </div>
-        </section>
+        </header>
     );
 };
 
-export default HeaderSection;
+export default Header;

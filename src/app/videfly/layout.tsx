@@ -3,13 +3,16 @@
 import { useTheme } from "next-themes";
 import { Nunito } from "next/font/google";
 import { useEffect } from "react";
-import LandingPageLayoutNavbar from "./components/layouts/LandingPageLayoutNavbar";
+import LandingPageLayoutNavbar from "~/components/layouts/Videfly/LandingPageLayoutNavbar";
 
 const nunito = Nunito({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"],
     variable: "--font-nunito",
 });
+
+const layoutClass =
+    "theme-videfly grid grid-cols-[16.25rem_1fr] min-h-screen bg-light text-dark";
 
 interface PropTypes {
     children: React.ReactNode;
@@ -24,7 +27,7 @@ const VideflyLayout = (props: PropTypes) => {
     }, [setTheme]);
 
     return (
-        <div className={`${nunito.variable} theme-videfly flex h-screen bg-light text-dark`}>
+        <div className={`${nunito.variable} ${layoutClass}`}>
             <LandingPageLayoutNavbar />
             {children}
         </div>

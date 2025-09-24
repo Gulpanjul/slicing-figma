@@ -1,12 +1,11 @@
-import React from "react";
 import { ACTION_ITEMS } from "./Banner.constant";
-import BannerImage from "~/app/videfly/components/svg/banner.svg";
+import Banner from "~/components/assets/Videfly/banner.svg";
 
 const BannerSection = () => {
     return (
-        <section className="flex items-center justify-center">
+        <section className="flex items-center w-full justify-center">
             <div className="relative flex items-center justify-center">
-                <BannerImage className="w-[63.875rem] h-[11.25rem] rounded-2xl" />
+                <Banner height="11.25rem" className="w-full h-auto" />
                 <p className="absolute text-[2rem] font-extrabold text-[#FFFFFF] font-[Nunito]">
                     Mulai kreasi baru hari ini!
                 </p>

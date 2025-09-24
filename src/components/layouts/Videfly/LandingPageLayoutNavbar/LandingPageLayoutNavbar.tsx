@@ -1,15 +1,15 @@
-import Image from "next/image";
 import React from "react";
 import Link from "next/link";
 import { NAV_ITEM } from "../layouts.constant";
-import SettingIcon from "../../ui/SettingIcon";
-import LogoutIcon from "../../ui/LogoutIcon";
-import DotIcon from "../../ui/DotIcon";
+import Logo from "~/components/assets/Videfly/logo.svg";
+import Crosshair from "~/components/assets/Videfly/crosshair.svg";
+import Gear from "~/components/assets/Videfly/gear.svg";
+import Exit from "~/components/assets/Videfly/exit.svg";
 
 const sidebarClass =
-    "flex flex-col w-[16.25rem] px-4 py-6 gap-16 border-r-2 border-[#ECECEC] font-medium";
+    "flex flex-col px-4 py-6 gap-16 border-r-2 border-[#ECECEC] font-medium";
 
-const logoClass = "relative h-11 w-32 self-center";
+const logoClass = "h-[2.375rem] w-[7.813rem] self-center py-[0.188rem]";
 
 const buttonClass =
     "flex items-center justify-center gap-3 w-full py-2 rounded-md bg-primary text-white font-semibold hover:bg-primary/90 transition";
@@ -24,13 +24,11 @@ const footerItemClass =
 
 const LandingPageLayoutNavbar = () => {
     return (
-        <header className={sidebarClass}>
-            <div className={logoClass}>
-                <Image src="/images/logo/videfly.svg" alt="Videfly Logo" fill />
-            </div>
+        <aside className={sidebarClass}>
+            <Logo className={logoClass} />
 
             <button className={buttonClass}>
-                Buat Video <DotIcon />
+                Buat Video <Crosshair />
             </button>
 
             <nav className="w-full">
@@ -51,17 +49,17 @@ const LandingPageLayoutNavbar = () => {
                     href="#"
                     className={`${footerItemClass} hover:bg-gray-100`}
                 >
-                    <SettingIcon />
+                    <Gear />
                     <span>Pengaturan</span>
                 </Link>
                 <button
                     className={`${footerItemClass} text-[#FF6D6D] hover:bg-red-50 text-left`}
                 >
-                    <LogoutIcon />
+                    <Exit />
                     <span>Keluar</span>
                 </button>
             </div>
-        </header>
+        </aside>
     );
 };
 
