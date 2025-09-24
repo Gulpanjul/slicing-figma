@@ -1,14 +1,14 @@
 "use client";
 
 import { useTheme } from "next-themes";
-import { Nunito } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { useEffect } from "react";
 import LandingPageLayoutNavbar from "~/components/layouts/Videfly/LandingPageLayoutNavbar";
 
-const nunito = Nunito({
+const poppins = Poppins({
     subsets: ["latin"],
     weight: ["400", "500", "600", "700"],
-    variable: "--font-nunito",
+    variable: "--font-poppins",
 });
 
 const layoutClass =
@@ -27,7 +27,7 @@ const VideflyLayout = (props: PropTypes) => {
     }, [setTheme]);
 
     return (
-        <div className={`${nunito.variable} ${layoutClass}`}>
+        <div className={`${poppins.variable} ${layoutClass}`}>
             <LandingPageLayoutNavbar />
             {children}
         </div>
