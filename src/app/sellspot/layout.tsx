@@ -1,10 +1,8 @@
 "use client";
 
-import { useTheme } from "next-themes";
 import { Poppins } from "next/font/google";
-import { useEffect } from "react";
-import LandingPageLayoutFooter from "~/app/sellspot/components/layouts/LandingPageLayout/LandingPageLayoutFooter";
-import LandingPageLayoutNavbar from "~/app/sellspot/components/layouts/LandingPageLayout/LandingPageLayoutNavbar";
+import LandingPageLayoutFooter from "~/components/layouts/SellSpot/LandingPageLayoutFooter";
+import LandingPageLayoutNavbar from "~/components/layouts/SellSpot/LandingPageLayoutNavbar";
 
 const poppins = Poppins({
     subsets: ["latin"],
@@ -18,20 +16,13 @@ interface PropTypes {
 
 const SellSpotLayout = (props: PropTypes) => {
     const { children } = props;
-    const { setTheme } = useTheme();
-
-    useEffect(() => {
-        setTheme("sellspot");
-    }, [setTheme]);
 
     return (
-        <body
-            className={`${poppins.variable} theme-sellspot bg-dark text-light`}
-        >
+        <div className={`${poppins.variable} bg-[#040410] text-[#c2c0ec]`}>
             <LandingPageLayoutNavbar />
             {children}
             <LandingPageLayoutFooter />
-        </body>
+        </div>
     );
 };
 
