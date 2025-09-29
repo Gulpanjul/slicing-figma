@@ -1,7 +1,9 @@
-import FeaturesSection from "./FeaturesSection";
-import HeroSection from "./HeroSection";
-import ServicesSection from "./ServicesSection";
 import Cover from "~/components/assets/Lidia/cover.svg";
+
+import HeroSection from "./HeroSection";
+import FeaturesSection from "./FeaturesSection";
+import ServicesSection from "./ServicesSection";
+import ReviewSection from "./ReviewSection";
 
 const Main = () => {
   return (
@@ -10,6 +12,7 @@ const Main = () => {
       <Cover className="absolute top-0 right-0 text-[#4475F2]" />
       <FeaturesSection />
       <ServicesSection />
+      <ReviewSection />
     </main>
   );
 };
