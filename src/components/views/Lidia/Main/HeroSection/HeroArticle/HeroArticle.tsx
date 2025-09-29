@@ -1,7 +1,7 @@
 const style = {
   heading: "pb-8 text-[76px] leading-[89px] font-extrabold tracking-[0.04em]", // 4% tracking = 0.04em
   highlight: "text-[#4475F2] underline decoration-3 underline-offset-10",
-  paragraph: "pb-9 text-base text-[#5E6282]",
+  paragraph: "pb-9 text-base text-[#5E6282] w-lg",
   button:
     "h-[60px] w-[200px] rounded-[10px] bg-[#4475F2] text-white font-medium",
 };
