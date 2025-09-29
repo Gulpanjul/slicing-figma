@@ -17,7 +17,7 @@ const Header = () => {
     <header className={style.header}>
       <div className={style.logoContainer}>
         <div className={style.logoImage}>
-          <Image src="/images/png/lidia-logo.png" fill alt="logo" />
+          <Image src="/images/Lidia/Logo.png" fill alt="logo" />
         </div>
         <p className={style.brandName}>Lidia</p>
       </div>

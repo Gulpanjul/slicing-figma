@@ -1,38 +1,52 @@
 import Image from "next/image";
 
+const style = {
+  container: "relative h-[516px]",
+  imageWrapper: "absolute shadow-[0_15px_30px_rgba(0,0,0,0.25)]",
+  image: "object-cover rounded-[10px]",
+
+  img1: "bottom-[40px] left-0 h-[302px] w-[209px]",
+  img2: "top-[120px] right-0 h-[228px] w-[150px]",
+  img3: "bottom-0 left-[308px] h-[163px] w-[108px]",
+  img4: "top-0 left-[236px] h-[214px] w-[143px]",
+};
+
 const HeroFigure = () => {
   return (
-    <figure className="relative h-full">
-      <div className="absolute -bottom-5 -left-4 h-[302px] w-[209px]">
+    <figure className={style.container}>
+      <div className={`${style.imageWrapper} ${style.img1}`}>
         <Image
-          src="/images/png/lidia-dompet-ayah-sepatu-ibu.png"
+          src="/images/Lidia/Dompet Ayah Sepatu Ibu.png"
+          alt="Dompet Ayah Sepatu Ibu"
           fill
-          alt="dompet ayah sepatu ibu"
-          className="object-cover"
+          className={style.image}
         />
       </div>
-      <div className="absolute top-[100px] -right-4 h-[228px] w-[150px]">
+
+      <div className={`${style.imageWrapper} ${style.img2}`}>
         <Image
-          src="/images/png/lidia-the-midnight-library.png"
+          src="/images/Lidia/The Midnight Library.png"
+          alt="The Midnight Library"
           fill
-          alt="the midnight library"
-          className="object-cover"
+          className={style.image}
         />
       </div>
-      <div className="absolute -bottom-8 left-[300px] h-[163px] w-[108px]">
+
+      <div className={`${style.imageWrapper} ${style.img3}`}>
         <Image
-          src="/images/png/lidia-the-visual-mba.png"
+          src="/images/Lidia/The Visual MBA.png"
+          alt="The Visual MBA"
           fill
-          alt="the visual mba"
-          className="object-cover"
+          className={style.image}
         />
       </div>
-      <div className="absolute -top-3 left-[250px] h-[214px] w-[143px]">
+
+      <div className={`${style.imageWrapper} ${style.img4}`}>
         <Image
-          src="/images/png/lidia-talking-to-strangers.png"
+          src="/images/Lidia/Talking to Strangers.png"
+          alt="Talking to Strangers"
           fill
-          alt="talking to strangers"
-          className="object-cover"
+          className={style.image}
         />
       </div>
     </figure>
