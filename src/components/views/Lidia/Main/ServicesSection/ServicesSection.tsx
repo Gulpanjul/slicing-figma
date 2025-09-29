@@ -2,7 +2,7 @@ import Image from "next/image";
 import Title from "~/components/ui/Lidia/Title";
 
 const style = {
-  article: "grid gap-[125px] mb-[140px]",
+  article: "grid gap-[125px]",
 
   firstLayout: "grid-cols-[600px_411px]",
   secondLayout: "grid-cols-[419px_1fr] gap-[181px]",
@@ -20,7 +20,7 @@ const ServicesSection = () => {
     <section>
       <Title heading="Services" desc="🚀• The Services for You" />
 
-      <article className={`${style.article} ${style.firstLayout}`}>
+      <article className={`${style.article} ${style.firstLayout} mb-[140px]`}>
         <div className={`${style.imageWrapper} justify-self-start`}>
           <Image
             src="/images/Lidia/Service.png"

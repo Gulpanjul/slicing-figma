@@ -2,8 +2,9 @@ import Image from "next/image";
 
 const style = {
   container: "relative h-[516px]",
-  imageWrapper: "absolute shadow-[0_15px_30px_rgba(0,0,0,0.25)]",
-  image: "object-cover rounded-[10px]",
+  imageWrapper:
+    "absolute shadow-[0_15px_30px_rgba(0,0,0,0.25)] overflow-hidden rounded-[10px]",
+  image: "object-cover",
 
   img1: "bottom-[40px] left-0 h-[302px] w-[209px]",
   img2: "top-[120px] right-0 h-[228px] w-[150px]",

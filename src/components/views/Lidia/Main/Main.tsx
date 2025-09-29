@@ -4,6 +4,7 @@ import HeroSection from "./HeroSection";
 import FeaturesSection from "./FeaturesSection";
 import ServicesSection from "./ServicesSection";
 import ReviewSection from "./ReviewSection";
+import LocationSection from "./LocationSection";
 
 const Main = () => {
   return (
@@ -13,6 +14,7 @@ const Main = () => {
       <FeaturesSection />
       <ServicesSection />
       <ReviewSection />
+      <LocationSection />
     </main>
   );
 };
