@@ -1,8 +1,4 @@
-"use client";
-
-import { useTheme } from "next-themes";
 import { Poppins } from "next/font/google";
-import { useEffect } from "react";
 import LandingPageLayoutNavbar from "~/components/layouts/Videfly/LandingPageLayoutNavbar";
 
 const poppins = Poppins({
@@ -20,11 +16,6 @@ interface PropTypes {
 
 const VideflyLayout = (props: PropTypes) => {
     const { children } = props;
-    const { setTheme } = useTheme();
-
-    useEffect(() => {
-        setTheme("videfly");
-    }, [setTheme]);
 
     return (
         <div className={`${poppins.variable} ${layoutClass}`}>

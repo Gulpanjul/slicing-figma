@@ -15,7 +15,7 @@ const LidiaLayout = (props: PropTypes) => {
   const { children } = props;
   return (
     <div
-      className={`${plus_jakarta_sans.className} min-h-screen bg-[#FFFFFF] text-[#000000]`}
+      className={`${plus_jakarta_sans.className} min-h-screen bg-[#FFFFFF] text-[#000000] max-w-[1440px] mx-auto relative`}
     >
       <div className="px-[120px] pt-[70px]">
         <Header />
